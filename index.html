@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+</head>
+
+<body style="background-image: url(stock-vector-hand-drawn-math-symbols-icon-in-flat-style-mathematics-formula-vector-illustration-on-isolated-2280605117.jpg);
+background-repeat: no-repeat;
+background-size: cover;">
+<audio id="noise" src="type.mp3"></audio>
+    <center>
+        <div style="display: inline-block;">
+            <textarea id="input_1" readonly="true"></textarea>
+            <textarea id="input_2" readonly="true"></textarea>
+            <textarea id="input_3" readonly="true"></textarea>
+            <div style="display: inline-block;">
+                <h1 style="color: white; font-size: 30;">=</h1>
+            </div>
+            <textarea id="answer" readonly="true"></textarea>
+        </div>
+        <br>
+        <h2 id="error" style="color: red;"></h2>
+        <br>
+        <div style="display: inline-block;">
+            <button onclick="f(1)" id="one">1</button>
+            <button onclick="f(2)" id="two">2</button>
+            <button onclick="f(3)" id="three">3</button>
+        </div>
+        <br>
+        <div style="display: inline-block;">
+            <button onclick="f(4)" id="four">4</button>
+            <button onclick="f(5)" id="five">5</button>
+            <button onclick="f(6)" id="six">6</button>
+        </div>
+        <br>
+        <div style="display: inline-block;">
+            <button onclick="f(7)" id="seven">7</button>
+            <button onclick="f(8)" id="eight">8</button>
+            <button onclick="f(9)" id="nine">9</button>
+        </div>
+        <br>
+        <div style="display: inline-block;">
+            <button onclick="f(0)" id="zero">0</button>
+            <button onclick="submit()" id="submit">Submit</button>
+        </div>
+        <br>
+        <div style="display: inline-block;">
+            <button onclick="o('+')" id="operators">+</button>
+            <button onclick="o('-')" id="operators">-</button>
+            <button onclick="o('x')" id="operators">x</button>
+            <button onclick="o('÷')" id="operators">÷</button>
+        </div>
+        <br>
+        <div style="display: inline-block;">
+            <input class="form-success" id="custom" type="number" placeholder="Custom">
+            <button onclick="custom()" id="custom_button">Enter</button>
+        </div>
+    </center>
+</body>
+<link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+
+</html>
